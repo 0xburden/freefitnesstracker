@@ -75,8 +75,8 @@ freefitnesstracker/
 ### Components
 - **FreeFT Logo**: Scalable SVG logo with customizable colors
 - **Enhanced Typography**: Text components with automatic font application
-- **Form Elements**: Styled inputs and buttons
-- **Cards**: Elevated container components
+- **Form Elements**: Styled inputs and buttons with 1.25rem border radius
+- **Cards**: Elevated container components with modern rounded corners
 
 ## 📱 Typography
 
@@ -133,6 +133,7 @@ The app is configured for:
 Custom theme with:
 - Dark color palette
 - Space Grotesk font family
+- Modern border radius (1.25rem for buttons/cards)
 - Custom component styling
 - Responsive design tokens
 

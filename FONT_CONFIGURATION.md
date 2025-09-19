@@ -149,4 +149,30 @@ letterSpacing: {
 
 ---
 
-**Result**: Every text element in the app now uses Space Grotesk font family with optimized letter spacing for maximum legibility.
+## Border Radius Configuration
+
+The app uses modern, rounded border radius for buttons and cards:
+
+### Global Radius Configuration (tamagui.config.ts)
+```typescript
+radius: {
+  0: 0,         // No radius
+  1: 4,         // Small radius (0.25rem)
+  2: 8,         // Medium radius (0.5rem)  
+  3: 12,        // Large radius (0.75rem)
+  4: 20,        // Button/Card radius (1.25rem)
+  5: 24,        // Extra large radius (1.5rem)
+  6: 32,        // Maximum radius (2rem)
+  true: 20,     // Default radius for components
+}
+```
+
+### Component Border Radius Usage
+- **Cards**: `borderRadius="$4"` (20px / 1.25rem)
+- **Buttons**: `borderRadius="$4"` (20px / 1.25rem)
+- **Input Fields**: `borderRadius="$3"` (12px / 0.75rem)
+- **Feature Circles**: Default circular shape
+
+---
+
+**Result**: Every text element in the app now uses Space Grotesk font family with optimized letter spacing for maximum legibility, and all interactive elements have modern rounded corners.

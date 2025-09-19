@@ -147,6 +147,17 @@ const darkThemeColors = {
 // Create dark-only theme configuration with Space Grotesk font
 const darkOnlyConfig = {
   ...config,
+  // Custom border radius for modern UI
+  radius: {
+    0: 0,         // No radius
+    1: 4,         // Small radius
+    2: 8,         // Medium radius  
+    3: 12,        // Large radius
+    4: 20,        // Button/Card radius (1.25rem)
+    5: 24,        // Extra large radius
+    6: 32,        // Maximum radius
+    true: 20,     // Default radius for components
+  },
   fonts: {
     // Set Space Grotesk as the default font for ALL text elements
     heading: spaceGroteskFont,

@@ -105,6 +105,7 @@ export default function App() {
           width={350}
           maxWidth="90%"
           padding="$4"
+          borderRadius="$4"
         >
           <Card.Header alignItems="center" gap="$2">
             <H3 color="$color" fontFamily="$heading" letterSpacing="$2">
@@ -128,6 +129,7 @@ export default function App() {
                 keyboardType="email-address"
                 autoCapitalize="none"
                 fontFamily="$input"
+                borderRadius="$3"
               />
             </YStack>
 
@@ -142,6 +144,7 @@ export default function App() {
                 onChangeText={setPassword}
                 secureTextEntry
                 fontFamily="$input"
+                borderRadius="$3"
               />
             </YStack>
 
@@ -155,6 +158,7 @@ export default function App() {
               marginTop="$2"
               fontFamily="$button"
               letterSpacing="$2"
+              borderRadius="$4"
             >
               {isLoginMode ? "Sign In" : "Create Account"}
             </Button>
@@ -180,6 +184,7 @@ export default function App() {
               onPress={() => setIsLoginMode(!isLoginMode)}
               fontFamily="$button"
               letterSpacing="$1"
+              borderRadius="$4"
             >
               {isLoginMode ? "Create New Account" : "Already have an account?"}
             </Button>
