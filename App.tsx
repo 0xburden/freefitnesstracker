@@ -191,7 +191,7 @@ export default function App() {
           <XStack gap="$4" flexWrap="wrap" justifyContent="center">
             <YStack alignItems="center" gap="$2" width={100}>
               <Circle size="$3" backgroundColor="$blue8">
-                <Text fontSize="$4">📊</Text>
+                <Text fontSize="$4" fontFamily="$body">📊</Text>
               </Circle>
               <Text
                 fontSize="$2"
@@ -205,7 +205,7 @@ export default function App() {
             </YStack>
             <YStack alignItems="center" gap="$2" width={100}>
               <Circle size="$3" backgroundColor="$orange10">
-                <Text fontSize="$4">🎯</Text>
+                <Text fontSize="$4" fontFamily="$body">🎯</Text>
               </Circle>
               <Text
                 fontSize="$2"
@@ -219,7 +219,7 @@ export default function App() {
             </YStack>
             <YStack alignItems="center" gap="$2" width={100}>
               <Circle size="$3" backgroundColor="$purple10">
-                <Text fontSize="$4">🏆</Text>
+                <Text fontSize="$4" fontFamily="$body">🏆</Text>
               </Circle>
               <Text
                 fontSize="$2"

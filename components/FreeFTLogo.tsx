@@ -46,7 +46,7 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
           r="46"
           fill={finalCircleColor}
           stroke={finalTextColor}
-          strokeWidth="1"
+          strokeWidth="3"
         />
         
         {/* FreeFT Text */}

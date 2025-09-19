@@ -3,7 +3,7 @@ import { config } from "@tamagui/config"
 
 // Define Space Grotesk font family configuration
 const spaceGroteskFont = {
-  family: "SpaceGrotesk",
+  family: "Space Grotesk",
   size: {
     1: 12,
     2: 14,

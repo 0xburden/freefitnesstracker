@@ -92,14 +92,38 @@ To verify Space Grotesk is being used:
 2. **Production**: Visual inspection - Space Grotesk has distinctive letterforms
 3. **Code**: All text components have explicit `fontFamily` props
 
+## Font Name Resolution
+
+**Important**: The font face names in Tamagui configuration must match exactly what Expo Google Fonts registers:
+
+```typescript
+face: {
+  300: { normal: "SpaceGrotesk_300Light" },
+  400: { normal: "SpaceGrotesk_400Regular" },
+  500: { normal: "SpaceGrotesk_500Medium" },
+  600: { normal: "SpaceGrotesk_600SemiBold" },
+  700: { normal: "SpaceGrotesk_700Bold" },
+}
+```
+
+### SVG Text Elements
+
+SVG Text elements require explicit font family names:
+```tsx
+<SvgText fontFamily="SpaceGrotesk_600SemiBold">
+  FreeFT
+</SvgText>
+```
+
 ## Troubleshooting
 
 If Space Grotesk isn't displaying:
 
 1. Ensure fonts are loaded before rendering (`fontsLoaded` check)
 2. Verify `fontFamily` props are set on all text components
-3. Check that Expo Google Fonts are properly installed
-4. Clear Metro bundler cache: `npx expo start --clear`
+3. Check that font face names match Expo imports exactly
+4. For SVG text, use the explicit font import names (e.g., `SpaceGrotesk_600SemiBold`)
+5. Clear Metro bundler cache: `npx expo start --clear`
 
 ---
 
