@@ -48,11 +48,11 @@ const spaceGroteskFont = {
     5: "700", // Bold
   },
   letterSpacing: {
-    1: 0,
-    2: -0.5,
-    3: -1,
-    4: -1.5,
-    5: -2,
+    1: 0.5,   // Slightly increased for better readability
+    2: 0.25,  // Positive spacing instead of negative
+    3: 0,     // Neutral for mid-range text
+    4: -0.25, // Slight tightening for larger text
+    5: -0.5,  // Minimal tightening for headings
   },
   face: {
     300: { normal: "SpaceGrotesk_300Light" },

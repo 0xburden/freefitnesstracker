@@ -81,7 +81,7 @@ export default function App() {
         {/* App Icon/Logo */}
         <YStack alignItems="center" gap="$3">
           <FreeFTLogo size={100} />
-          <H1 color="$color" textAlign="center" fontFamily="$heading">
+          <H1 color="$color" textAlign="center" fontFamily="$heading" letterSpacing="$2">
             Free Fitness Tracker
           </H1>
           <Paragraph
@@ -90,6 +90,7 @@ export default function App() {
             textAlign="center"
             maxWidth={300}
             fontFamily="$body"
+            letterSpacing="$1"
           >
             Track your fitness journey with ease. Stay motivated, stay healthy.
           </Paragraph>
@@ -106,17 +107,17 @@ export default function App() {
           padding="$4"
         >
           <Card.Header alignItems="center" gap="$2">
-            <H3 color="$color" fontFamily="$heading">
+            <H3 color="$color" fontFamily="$heading" letterSpacing="$2">
               {isLoginMode ? "Welcome Back" : "Join Us Today"}
             </H3>
-            <Paragraph color="$color" opacity={0.7} fontSize="$3" fontFamily="$body">
+            <Paragraph color="$color" opacity={0.7} fontSize="$3" fontFamily="$body" letterSpacing="$1">
               {isLoginMode ? "Sign in to continue" : "Create your account"}
             </Paragraph>
           </Card.Header>
 
           <YStack gap="$3" padding="$2">
             <YStack gap="$2">
-              <Text fontSize="$3" fontWeight="500" color="$color" fontFamily="$body">
+              <Text fontSize="$3" fontWeight="500" color="$color" fontFamily="$body" letterSpacing="$1">
                 Email
               </Text>
               <Input
@@ -131,7 +132,7 @@ export default function App() {
             </YStack>
 
             <YStack gap="$2">
-              <Text fontSize="$3" fontWeight="500" color="$color" fontFamily="$body">
+              <Text fontSize="$3" fontWeight="500" color="$color" fontFamily="$body" letterSpacing="$1">
                 Password
               </Text>
               <Input
@@ -153,13 +154,14 @@ export default function App() {
               onPress={isLoginMode ? handleLogin : handleSignup}
               marginTop="$2"
               fontFamily="$button"
+              letterSpacing="$2"
             >
               {isLoginMode ? "Sign In" : "Create Account"}
             </Button>
 
             <XStack alignItems="center" gap="$3" marginVertical="$2">
               <Separator flex={1} borderColor="$borderColor" />
-              <Text fontSize="$2" color="$color" opacity={0.6} fontFamily="$body">
+              <Text fontSize="$2" color="$color" opacity={0.6} fontFamily="$body" letterSpacing="$3">
                 OR
               </Text>
               <Separator flex={1} borderColor="$borderColor" />
@@ -177,6 +179,7 @@ export default function App() {
               pressStyle={{ backgroundColor: "$purple3" }}
               onPress={() => setIsLoginMode(!isLoginMode)}
               fontFamily="$button"
+              letterSpacing="$1"
             >
               {isLoginMode ? "Create New Account" : "Already have an account?"}
             </Button>
@@ -185,7 +188,7 @@ export default function App() {
 
         {/* Features Preview */}
         <YStack gap="$3" alignItems="center" marginTop="$2">
-          <Text fontSize="$4" fontWeight="600" color="$color" fontFamily="$body">
+          <Text fontSize="$4" fontWeight="600" color="$color" fontFamily="$body" letterSpacing="$1">
             Why Choose Free Fitness Tracker?
           </Text>
           <XStack gap="$4" flexWrap="wrap" justifyContent="center">
@@ -199,6 +202,7 @@ export default function App() {
                 opacity={0.8}
                 textAlign="center"
                 fontFamily="$body"
+                letterSpacing="$1"
               >
                 Track Progress
               </Text>
@@ -213,6 +217,7 @@ export default function App() {
                 opacity={0.8}
                 textAlign="center"
                 fontFamily="$body"
+                letterSpacing="$1"
               >
                 Set Goals
               </Text>
@@ -227,6 +232,7 @@ export default function App() {
                 opacity={0.8}
                 textAlign="center"
                 fontFamily="$body"
+                letterSpacing="$1"
               >
                 Achievements
               </Text>

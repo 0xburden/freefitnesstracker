@@ -58,7 +58,7 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
           fill={finalTextColor}
           textAnchor="middle"
           fontWeight="600"
-          letterSpacing="-0.5"
+          letterSpacing="0.5"
         >
           FreeFT
         </SvgText>

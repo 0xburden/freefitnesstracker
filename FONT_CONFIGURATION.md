@@ -125,6 +125,28 @@ If Space Grotesk isn't displaying:
 4. For SVG text, use the explicit font import names (e.g., `SpaceGrotesk_600SemiBold`)
 5. Clear Metro bundler cache: `npx expo start --clear`
 
+## Letter Spacing Configuration
+
+The app uses enhanced letter spacing for better legibility:
+
+### Global Letter Spacing (tamagui.config.ts)
+```typescript
+letterSpacing: {
+  1: 0.5,   // Increased for better readability
+  2: 0.25,  // Positive spacing instead of negative
+  3: 0,     // Neutral for mid-range text
+  4: -0.25, // Slight tightening for larger text
+  5: -0.5,  // Minimal tightening for headings
+}
+```
+
+### Component-Level Letter Spacing
+- **Headings (H1-H4)**: `letterSpacing="$2"` (0.25px)
+- **Body Text**: `letterSpacing="$1"` (0.5px)
+- **Buttons**: `letterSpacing="$2"` or `letterSpacing="$1"`
+- **Labels**: `letterSpacing="$1"` (0.5px)
+- **Logo**: `letterSpacing="0.5"` (SVG custom value)
+
 ---
 
-**Result**: Every text element in the app now uses Space Grotesk font family by default.
+**Result**: Every text element in the app now uses Space Grotesk font family with optimized letter spacing for maximum legibility.

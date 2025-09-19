@@ -21,35 +21,35 @@ import {
  */
 
 export const Text = (props: TextProps) => (
-  <TamaguiText fontFamily="$body" {...props} />
+  <TamaguiText fontFamily="$body" letterSpacing="$1" {...props} />
 )
 
 export const Paragraph = (props: ParagraphProps) => (
-  <TamaguiParagraph fontFamily="$body" {...props} />
+  <TamaguiParagraph fontFamily="$body" letterSpacing="$1" {...props} />
 )
 
 export const H1 = (props: HeadingProps) => (
-  <TamaguiH1 fontFamily="$heading" {...props} />
+  <TamaguiH1 fontFamily="$heading" letterSpacing="$2" {...props} />
 )
 
 export const H2 = (props: HeadingProps) => (
-  <TamaguiH2 fontFamily="$heading" {...props} />
+  <TamaguiH2 fontFamily="$heading" letterSpacing="$2" {...props} />
 )
 
 export const H3 = (props: HeadingProps) => (
-  <TamaguiH3 fontFamily="$heading" {...props} />
+  <TamaguiH3 fontFamily="$heading" letterSpacing="$2" {...props} />
 )
 
 export const H4 = (props: HeadingProps) => (
-  <TamaguiH4 fontFamily="$heading" {...props} />
+  <TamaguiH4 fontFamily="$heading" letterSpacing="$2" {...props} />
 )
 
 export const H5 = (props: HeadingProps) => (
-  <TamaguiH5 fontFamily="$heading" {...props} />
+  <TamaguiH5 fontFamily="$heading" letterSpacing="$1" {...props} />
 )
 
 export const H6 = (props: HeadingProps) => (
-  <TamaguiH6 fontFamily="$heading" {...props} />
+  <TamaguiH6 fontFamily="$heading" letterSpacing="$1" {...props} />
 )
 
 export default {
