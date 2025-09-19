@@ -39,3 +39,22 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+logs/
+
+# Package manager lock files (keep only one)
+pnpm-lock.yaml
+yarn.lock
+
+# Build outputs
+build/
+.next/
+out/
