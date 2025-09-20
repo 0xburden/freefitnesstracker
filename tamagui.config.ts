@@ -48,11 +48,11 @@ const spaceGroteskFont = {
     5: "700", // Bold
   },
   letterSpacing: {
-    1: 0.5,   // Slightly increased for better readability
-    2: 0.25,  // Positive spacing instead of negative
-    3: 0,     // Neutral for mid-range text
+    1: 0.5, // Slightly increased for better readability
+    2: 0.25, // Positive spacing instead of negative
+    3: 0, // Neutral for mid-range text
     4: -0.25, // Slight tightening for larger text
-    5: -0.5,  // Minimal tightening for headings
+    5: -0.5, // Minimal tightening for headings
   },
   face: {
     300: { normal: "SpaceGrotesk_300Light" },
@@ -149,14 +149,14 @@ const darkOnlyConfig = {
   ...config,
   // Custom border radius for modern UI
   radius: {
-    0: 0,         // No radius
-    1: 4,         // Small radius
-    2: 8,         // Medium radius  
-    3: 12,        // Large radius
-    4: 20,        // Button/Card radius (1.25rem)
-    5: 24,        // Extra large radius
-    6: 32,        // Maximum radius
-    true: 20,     // Default radius for components
+    0: 0, // No radius
+    1: 8, // Small radius
+    2: 16, // Medium radius
+    3: 24, // Large radius
+    4: 32, // Standard radius (2rem)
+    5: 40, // Extra large radius
+    6: 48, // Maximum radius
+    true: 48, // Default radius for components ($6)
   },
   fonts: {
     // Set Space Grotesk as the default font for ALL text elements

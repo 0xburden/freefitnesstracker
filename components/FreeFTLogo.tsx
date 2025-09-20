@@ -1,12 +1,18 @@
-import React from 'react'
-import { View } from 'react-native'
-import Svg, { Circle, Text as SvgText, Defs, RadialGradient, Stop } from 'react-native-svg'
-import { useTheme } from '@tamagui/core'
+import React from "react"
+import { View } from "react-native"
+import Svg, {
+  Circle,
+  Text as SvgText,
+  Defs,
+  RadialGradient,
+  Stop,
+} from "react-native-svg"
+import { useTheme } from "@tamagui/core"
 
 /**
  * FreeFitnessTracker Logo Component
  *
- * A circular SVG logo with "FreeFitnessTracker" text in bold monospace font.
+ * A circular SVG logo with "Free", "Fitness", "Tracker" text stacked vertically in bold monospace font.
  * Clean design with no outer stroke and bold dark purple text.
  * Integrates with Tamagui theming system for consistent colors.
  *
@@ -31,8 +37,8 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
   const theme = useTheme()
 
   // Use provided colors or fall back to theme colors with final fallbacks
-  const finalCircleColor = circleColor || theme.purple10?.val || '#8b5cf6'
-  const finalTextColor = textColor || theme.purple8?.val || '#59478d'
+  const finalCircleColor = circleColor || theme.purple10?.val || "#8b5cf6"
+  const finalTextColor = textColor || theme.purple8?.val || "#59478d"
 
   // Calculate responsive font size for text
   const fontSize = Math.max(6, size * 0.12)
@@ -50,28 +56,24 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
         </Defs>
 
         {/* Outer glow circles */}
-        <Circle
-          cx="50"
-          cy="50"
-          r="52"
-          fill="rgba(255, 255, 255, 0.08)"
-        />
-        <Circle
-          cx="50"
-          cy="50"
-          r="50"
-          fill="rgba(255, 255, 255, 0.12)"
-        />
-        
-        {/* Main circle background */}
-        <Circle
-          cx="50"
-          cy="50"
-          r="48"
-          fill="url(#backgroundGradient)"
-        />
+        <Circle cx="50" cy="50" r="52" fill="rgba(255, 255, 255, 0.08)" />
+        <Circle cx="50" cy="50" r="50" fill="rgba(255, 255, 255, 0.12)" />
 
-        {/* FreeFitnessTracker Text */}
+        {/* Main circle background */}
+        <Circle cx="50" cy="50" r="48" fill="url(#backgroundGradient)" />
+
+        {/* Stacked Text: Free, Fitness, Tracker */}
+        <SvgText
+          x="50"
+          y="42"
+          fontSize={fontSize}
+          fontFamily="monospace"
+          fontWeight="bold"
+          fill={finalTextColor}
+          textAnchor="middle"
+        >
+          Free
+        </SvgText>
         <SvgText
           x="50"
           y="55"
@@ -81,7 +83,18 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
           fill={finalTextColor}
           textAnchor="middle"
         >
-          FreeFitnessTracker
+          Fitness
+        </SvgText>
+        <SvgText
+          x="50"
+          y="68"
+          fontSize={fontSize}
+          fontFamily="monospace"
+          fontWeight="bold"
+          fill={finalTextColor}
+          textAnchor="middle"
+        >
+          Tracker
         </SvgText>
       </Svg>
     </View>

@@ -1,6 +1,6 @@
-import React from 'react'
-import { 
-  Text as TamaguiText, 
+import React from "react"
+import {
+  Text as TamaguiText,
   Paragraph as TamaguiParagraph,
   H1 as TamaguiH1,
   H2 as TamaguiH2,
@@ -11,11 +11,11 @@ import {
   TextProps,
   ParagraphProps,
   HeadingProps,
-} from 'tamagui'
+} from "tamagui"
 
 /**
  * Enhanced Text Components with forced Space Grotesk font
- * 
+ *
  * These components ensure that Space Grotesk is always used,
  * even if the global Tamagui configuration doesn't pick it up.
  */

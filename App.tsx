@@ -81,7 +81,12 @@ export default function App() {
         {/* App Icon/Logo */}
         <YStack alignItems="center" gap="$3">
           <FreeFTLogo size={100} />
-          <H1 color="$color" textAlign="center" fontFamily="$heading" letterSpacing="$2">
+          <H1
+            color="$color"
+            textAlign="center"
+            fontFamily="$heading"
+            letterSpacing="$2"
+          >
             Free Fitness Tracker
           </H1>
           <Paragraph
@@ -105,20 +110,32 @@ export default function App() {
           width={350}
           maxWidth="90%"
           padding="$4"
-          borderRadius="$4"
+          borderRadius="$6"
         >
           <Card.Header alignItems="center" gap="$2">
             <H3 color="$color" fontFamily="$heading" letterSpacing="$2">
               {isLoginMode ? "Welcome Back" : "Join Us Today"}
             </H3>
-            <Paragraph color="$color" opacity={0.7} fontSize="$3" fontFamily="$body" letterSpacing="$1">
+            <Paragraph
+              color="$color"
+              opacity={0.7}
+              fontSize="$3"
+              fontFamily="$body"
+              letterSpacing="$1"
+            >
               {isLoginMode ? "Sign in to continue" : "Create your account"}
             </Paragraph>
           </Card.Header>
 
           <YStack gap="$3" padding="$2">
             <YStack gap="$2">
-              <Text fontSize="$3" fontWeight="500" color="$color" fontFamily="$body" letterSpacing="$1">
+              <Text
+                fontSize="$3"
+                fontWeight="500"
+                color="$color"
+                fontFamily="$body"
+                letterSpacing="$1"
+              >
                 Email
               </Text>
               <Input
@@ -129,12 +146,18 @@ export default function App() {
                 keyboardType="email-address"
                 autoCapitalize="none"
                 fontFamily="$input"
-                borderRadius="$3"
+                borderRadius="$6"
               />
             </YStack>
 
             <YStack gap="$2">
-              <Text fontSize="$3" fontWeight="500" color="$color" fontFamily="$body" letterSpacing="$1">
+              <Text
+                fontSize="$3"
+                fontWeight="500"
+                color="$color"
+                fontFamily="$body"
+                letterSpacing="$1"
+              >
                 Password
               </Text>
               <Input
@@ -144,7 +167,7 @@ export default function App() {
                 onChangeText={setPassword}
                 secureTextEntry
                 fontFamily="$input"
-                borderRadius="$3"
+                borderRadius="$6"
               />
             </YStack>
 
@@ -158,14 +181,20 @@ export default function App() {
               marginTop="$2"
               fontFamily="$button"
               letterSpacing="$2"
-              borderRadius="$4"
+              borderRadius="$6"
             >
               {isLoginMode ? "Sign In" : "Create Account"}
             </Button>
 
             <XStack alignItems="center" gap="$3" marginVertical="$2">
               <Separator flex={1} borderColor="$borderColor" />
-              <Text fontSize="$2" color="$color" opacity={0.6} fontFamily="$body" letterSpacing="$3">
+              <Text
+                fontSize="$2"
+                color="$color"
+                opacity={0.6}
+                fontFamily="$body"
+                letterSpacing="$3"
+              >
                 OR
               </Text>
               <Separator flex={1} borderColor="$borderColor" />
@@ -184,7 +213,7 @@ export default function App() {
               onPress={() => setIsLoginMode(!isLoginMode)}
               fontFamily="$button"
               letterSpacing="$1"
-              borderRadius="$4"
+              borderRadius="$6"
             >
               {isLoginMode ? "Create New Account" : "Already have an account?"}
             </Button>
