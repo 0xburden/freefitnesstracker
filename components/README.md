@@ -1,6 +1,6 @@
-# FreeFT Logo Component
+# FFT Logo Component
 
-A circular SVG logo component for the Free Fitness Tracker app featuring "FreeFT" text in Space Grotesk font.
+A circular SVG logo component for the Free Fitness Tracker app featuring custom drawn "FFT" text paths.
 
 ## Features
 
@@ -8,6 +8,7 @@ A circular SVG logo component for the Free Fitness Tracker app featuring "FreeFT
 - **Tamagui Integration**: Uses theme colors by default with manual override options
 - **Responsive**: Font size scales with logo size
 - **Enhanced Legibility**: Optimized letter spacing (0.5px) for better readability
+- **Glow Effect**: Subtle outer white glow for luminous appearance
 - **TypeScript**: Fully typed with comprehensive prop documentation
 
 ## Usage
@@ -39,10 +40,11 @@ import { FreeFTLogo } from './components'
 
 ## Design Details
 
-- **Font**: Space Grotesk SemiBold (600 weight)
-- **Text**: "FreeFT" (abbreviated from FreeFitnessTracker)
-- **Letter Spacing**: 0.5px for enhanced legibility
-- **Shape**: Circular background with slight border
+- **Text**: "FFT" custom drawn paths (more compact than FreeFT)
+- **Design**: Smaller and wider letter forms for better balance
+- **Color**: Uses theme accent color (#fbbf24 yellow) for text
+- **Shape**: Clean circular background without outer stroke
+- **Glow Effect**: Layered transparent white circles (8% and 12% opacity)
 - **Theme Integration**: Automatically adapts to Tamagui theme colors
 
 ## Dependencies
