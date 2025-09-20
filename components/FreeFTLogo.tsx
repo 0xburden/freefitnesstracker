@@ -1,12 +1,12 @@
 import React from 'react'
 import { View } from 'react-native'
-import Svg, { Circle, Path, Defs, RadialGradient, Stop } from 'react-native-svg'
+import Svg, { Circle, Text as SvgText, Defs, RadialGradient, Stop } from 'react-native-svg'
 import { useTheme } from '@tamagui/core'
 
 /**
- * FFT Logo Component
+ * FreeFitnessTracker Logo Component
  *
- * A circular SVG logo with custom drawn "FFT" text paths.
+ * A circular SVG logo with "FreeFitnessTracker" text in bold monospace font.
  * Clean design with no outer stroke and bold dark purple text.
  * Integrates with Tamagui theming system for consistent colors.
  *
@@ -34,8 +34,8 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
   const finalCircleColor = circleColor || theme.purple10?.val || '#8b5cf6'
   const finalTextColor = textColor || theme.purple8?.val || '#59478d'
 
-  // Calculate bold stroke width for more prominent text
-  const strokeWidth = Math.max(2, size * 0.05)
+  // Calculate responsive font size for text
+  const fontSize = Math.max(6, size * 0.12)
 
   return (
     <View style={{ width: size, height: size }}>
@@ -71,36 +71,18 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
           fill="url(#backgroundGradient)"
         />
 
-        {/* FFT Text - Custom drawn paths - smaller and wider */}
-        {/* First F */}
-        <Path
-          d="M25 42 L25 58 M25 42 L35 42 M25 50 L32 50"
-          stroke={finalTextColor}
-          strokeWidth={strokeWidth}
-          strokeLinecap="square"
-          strokeLinejoin="miter"
-          fill="none"
-        />
-
-        {/* Second F */}
-        <Path
-          d="M40 42 L40 58 M40 42 L50 42 M40 50 L47 50"
-          stroke={finalTextColor}
-          strokeWidth={strokeWidth}
-          strokeLinecap="square"
-          strokeLinejoin="miter"
-          fill="none"
-        />
-
-        {/* T */}
-        <Path
-          d="M55 42 L75 42 M65 42 L65 58"
-          stroke={finalTextColor}
-          strokeWidth={strokeWidth}
-          strokeLinecap="square"
-          strokeLinejoin="miter"
-          fill="none"
-        />
+        {/* FreeFitnessTracker Text */}
+        <SvgText
+          x="50"
+          y="55"
+          fontSize={fontSize}
+          fontFamily="monospace"
+          fontWeight="bold"
+          fill={finalTextColor}
+          textAnchor="middle"
+        >
+          FreeFitnessTracker
+        </SvgText>
       </Svg>
     </View>
   )
