@@ -22,7 +22,6 @@ import {
   H3,
   Paragraph,
   Separator,
-  Circle,
 } from "tamagui"
 import config from "./tamagui.config"
 import { FreeFTLogo } from "./components"
@@ -76,6 +75,7 @@ export default function App() {
         alignItems="center"
         justifyContent="center"
         padding="$4"
+        paddingTop={40}
         gap="$6"
       >
         {/* App Icon/Logo */}
@@ -190,60 +190,6 @@ export default function App() {
             </Button>
           </YStack>
         </Card>
-
-        {/* Features Preview */}
-        <YStack gap="$3" alignItems="center" marginTop="$2">
-          <Text fontSize="$4" fontWeight="600" color="$color" fontFamily="$body" letterSpacing="$1">
-            Why Choose Free Fitness Tracker?
-          </Text>
-          <XStack gap="$4" flexWrap="wrap" justifyContent="center">
-            <YStack alignItems="center" gap="$2" width={100}>
-              <Circle size="$3" backgroundColor="$blue8">
-                <Text fontSize="$4" fontFamily="$body">📊</Text>
-              </Circle>
-              <Text
-                fontSize="$2"
-                color="$color"
-                opacity={0.8}
-                textAlign="center"
-                fontFamily="$body"
-                letterSpacing="$1"
-              >
-                Track Progress
-              </Text>
-            </YStack>
-            <YStack alignItems="center" gap="$2" width={100}>
-              <Circle size="$3" backgroundColor="$orange10">
-                <Text fontSize="$4" fontFamily="$body">🎯</Text>
-              </Circle>
-              <Text
-                fontSize="$2"
-                color="$color"
-                opacity={0.8}
-                textAlign="center"
-                fontFamily="$body"
-                letterSpacing="$1"
-              >
-                Set Goals
-              </Text>
-            </YStack>
-            <YStack alignItems="center" gap="$2" width={100}>
-              <Circle size="$3" backgroundColor="$purple10">
-                <Text fontSize="$4" fontFamily="$body">🏆</Text>
-              </Circle>
-              <Text
-                fontSize="$2"
-                color="$color"
-                opacity={0.8}
-                textAlign="center"
-                fontFamily="$body"
-                letterSpacing="$1"
-              >
-                Achievements
-              </Text>
-            </YStack>
-          </XStack>
-        </YStack>
 
         <StatusBar style="auto" />
       </YStack>
