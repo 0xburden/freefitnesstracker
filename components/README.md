@@ -42,7 +42,9 @@ import { FreeFTLogo } from './components'
 
 - **Text**: "FFT" custom drawn paths (more compact than FreeFT)
 - **Design**: Smaller and wider letter forms for better balance
-- **Color**: Uses theme accent color (#fbbf24 yellow) for text
+- **Color**: Uses theme dark purple (#59478d) for bold text
+- **Stroke Style**: Sharp square caps and miter joins (not rounded)
+- **Weight**: Bold stroke width for prominent appearance
 - **Shape**: Clean circular background without outer stroke
 - **Glow Effect**: Layered transparent white circles (8% and 12% opacity)
 - **Theme Integration**: Automatically adapts to Tamagui theme colors

@@ -7,12 +7,12 @@ import { useTheme } from '@tamagui/core'
  * FFT Logo Component
  *
  * A circular SVG logo with custom drawn "FFT" text paths.
- * Clean design with no outer stroke and accent color text.
+ * Clean design with no outer stroke and bold dark purple text.
  * Integrates with Tamagui theming system for consistent colors.
  *
  * @param size - Logo diameter in pixels (default: 80)
  * @param circleColor - Background circle color (defaults to theme purple10)
- * @param textColor - Text color (defaults to theme accent color)
+ * @param textColor - Text color (defaults to theme dark purple)
  */
 export interface FreeFTLogoProps {
   /** Logo size in pixels */
@@ -32,10 +32,10 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
 
   // Use provided colors or fall back to theme colors with final fallbacks
   const finalCircleColor = circleColor || theme.purple10?.val || '#8b5cf6'
-  const finalTextColor = textColor || theme.accent?.val || '#fbbf24'
+  const finalTextColor = textColor || theme.purple8?.val || '#59478d'
 
-  // Calculate stroke width based on size for consistent appearance
-  const strokeWidth = Math.max(1, size * 0.03)
+  // Calculate bold stroke width for more prominent text
+  const strokeWidth = Math.max(2, size * 0.05)
 
   return (
     <View style={{ width: size, height: size }}>
@@ -77,8 +77,8 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
           d="M25 42 L25 58 M25 42 L35 42 M25 50 L32 50"
           stroke={finalTextColor}
           strokeWidth={strokeWidth}
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          strokeLinecap="square"
+          strokeLinejoin="miter"
           fill="none"
         />
 
@@ -87,8 +87,8 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
           d="M40 42 L40 58 M40 42 L50 42 M40 50 L47 50"
           stroke={finalTextColor}
           strokeWidth={strokeWidth}
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          strokeLinecap="square"
+          strokeLinejoin="miter"
           fill="none"
         />
 
@@ -97,8 +97,8 @@ export const FreeFTLogo: React.FC<FreeFTLogoProps> = ({
           d="M55 42 L75 42 M65 42 L65 58"
           stroke={finalTextColor}
           strokeWidth={strokeWidth}
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          strokeLinecap="square"
+          strokeLinejoin="miter"
           fill="none"
         />
       </Svg>
